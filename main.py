@@ -73,7 +73,7 @@ def convert_dict_to_csv(data):
 		end_name = col.split('/')[-1]
 		df.rename(columns = {col:end_name}, inplace = True)
 
-	df.to_csv('result.csv', sep=';')
+	df.to_csv('result.csv', sep=';', encoding='utf-8')
 
 
 if __name__ == "__main__":
